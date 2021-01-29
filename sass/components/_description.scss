@@ -1,0 +1,48 @@
+/* особенности */
+
+.description-list{
+
+    @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+       } 
+    }
+
+    .description h3 {
+        margin-top: 0px;
+        margin-bottom: 10px;
+        text-align: center;
+        
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        
+        @media screen and(min-width:768px){
+        text-align: left;
+        }
+        }
+  .description-item{
+    margin: 15px;
+    
+    @media screen and (max-width: 767px){
+    width: 100%;
+    } 
+    @media screen and (min-width: 768px){
+    width: calc((100% - 4 * 15px) / 2);
+    }
+    @media screen and (min-width: 1200px){
+    width: calc((100% - 8 * 15px) / 4);
+    }
+  }      
+.description-icon{
+background-color: $buttom-grey;
+border-radius: 4px;
+padding-left:  auto;
+padding-right:  auto;
+padding-top: 25px;
+padding-bottom: 25px;
+margin-bottom: 30px;
+text-align: center;
+}

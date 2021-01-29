@@ -1,0 +1,41 @@
+/* Чем мы занимаемся */
+.activity {
+padding-top: 0px;
+padding-bottom: 94px;
+
+@media screen and(max-width: 1199px){
+display: none;    
+} 
+}
+
+.activity-list{
+display: flex;
+}
+.activity-list .item {
+display: inline-block;
+position: relative;
+width: 33.3333%;
+margin-right: 30px;
+
+&:nth-child(3n) {
+margin-right: 0px;
+}
+}
+
+.activity-overley{
+position: absolute;
+bottom:0;
+left: 0;
+width: 100%;
+   
+display: block;
+text-align: center;
+
+margin: 0px;
+padding: 27px 0;
+background-color: rgba(47, 48, 58, 0.8);
+text-transform: uppercase;
+color: $white-minor;
+font-weight: 700;
+}
+

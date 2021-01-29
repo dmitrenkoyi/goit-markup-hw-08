@@ -1,0 +1,165 @@
+/* Футер */
+.footer {
+padding-top: 60px;
+padding-bottom: 60px;
+background-color: $footer-hero-bgr-color;
+
+@media screen and (max-width: 767px){
+text-align: center;
+}
+}
+
+.footer-logo {
+display: block;
+font-weight: 700;
+font-size: 24px;
+line-height: 1.2;
+letter-spacing: 0.03em;
+color: $white-minor;
+font-family: Raleway, sans-serif;
+margin-bottom: 20px;
+}
+
+.footer-address {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.7;
+font-style: normal;
+
+p {
+color: $white-minor;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+}
+
+.footer-address__link {
+color: $footer-link;
+margin-top: 8px;
+display: block;
+}
+
+.footer-subscription{
+margin-top: 60px;
+text-align: center;
+}
+
+.footer-socials p,
+.footer-subscription p{
+margin-top: 0;
+margin-bottom: 20px;
+color:  $white-minor;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+}
+
+.footer-socials a{
+// @extend %flex-center;
+
+color:  $white-minor; 
+background-color: rgba(255, 255, 255, 0.1);
+
+transition: background-color  250ms $timing-function,
+            color 250ms $timing-function;
+}
+
+.footer-socials{
+margin-top: 60px;
+}
+
+.item-footer {
+margin-right: 10px;
+margin-bottom: 0px;
+
+.item-footer:not(:last-child) {
+margin-right: 10px;
+}
+}
+
+// /* Форма подписки */
+.footer-input{
+display: block;
+margin-bottom: 20px;
+padding: 15px 16px;
+border: 1px solid rgba(255, 255, 255, 0.3);
+border-radius: 4px;
+width: 100%;
+background-color: transparent;
+color: $white-minor;
+
+&:focus{
+outline: 0;
+border-color: $accent-color-blue;
+}
+}
+
+
+.icon-telegram::after{
+content: "";
+width: 24px;
+height: 24px;
+margin-left: 10px;
+background-image: url(../images/icon/telegram.svg);
+
+display: inline-flex;
+align-items: center;
+vertical-align: middle;
+}
+
+
+@media screen and (min-width: 768px) and (max-width:1199px){
+    .footer-thumb{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    }
+    .footer-input{
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+    }
+    .footer-socials{
+    padding-top: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 165px;
+    text-align: center;
+    }
+}
+
+    @media screen and (min-width: 1200px){
+
+.footer .conteiner{
+display: flex;
+align-items: baseline;
+}
+.footer-thumb{
+display: flex;
+}
+.footer-logo{
+font-size: 26px;
+}
+.footer-socials {
+margin-top: 0px;
+margin-left: 70px;
+padding-top: 12px;
+}
+.footer-subscription{
+margin-top: 0px;
+margin-left: auto;
+padding-top: 12px;
+text-align: left;
+}
+
+.footer-input{
+margin: 0px 12px 0px 0px;
+width: 358px;
+}
+.form-subscription{
+display: flex;
+}
+
+}
